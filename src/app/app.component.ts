@@ -7,12 +7,14 @@ import { users } from '../app/mock/array';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {  
-  vari: string = "";
   users: any = users;
-  title = 'project1';
-  name: HTMLElement = (document.getElementById('input') as HTMLInputElement);
-  
-  add (){
-    console.log(this.name);
-  }
+  vari: string[] = [];
+
+  names: any[] = [
+    {"id": 'Mario'},
+    {"id": 'Luca'},
+    {"id": 'Giovanna'},
+    {"id": 'Paola'}
+]
+ 
 }
