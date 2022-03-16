@@ -2,4 +2,7 @@
     <ul *ngFor="let user of users">
         <li>{{ user.id }}</li>
     </ul>
+    <input id="input" [(ngModel)]="vari">
+    <h1>{{ vari }}</h1>
+    <button class="btn-dark" (click)="add()">test</button>
 </div>
