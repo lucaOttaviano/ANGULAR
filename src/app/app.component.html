@@ -1,7 +1,11 @@
-<div>
-    <ul *ngFor="let user of users">
-        <li>{{ user.id }}</li>
-    </ul>
-    <input id="input" [(ngModel)]="vari">
-    <h1>{{ vari }}</h1>
+<div class="col-4 offset-4" style="margin-top: 2em; padding-top: 2em; min-height: 20em; border: 1px solid black">
+    <div class="col-8 offset-2">
+        <input placeholder="inserisci un nome" [(ngModel)]="input">
+        <button class="btn-dark" (click)="testF()">test</button>
+    </div>
+    <div class="bg-primary col-8 offset-2">
+        <ul style="text-align: center" *ngFor="let name of names">
+            <li>{{ name }}</li>
+        </ul>
+    </div>
 </div>
