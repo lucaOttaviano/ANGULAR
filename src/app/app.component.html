@@ -1,7 +1,7 @@
 <div class="col-4 offset-4" style="margin-top: 2em; padding-top: 2em; min-height: 20em; border: 1px solid black">
     <div class="col-8 offset-2">
-        <input placeholder="inserisci un nome" [(ngModel)]="input">
-        <button class="btn-dark" (click)="testF()">test</button>
+        <input placeholder="inserisci un nome" class="col-6 offset-2" [(ngModel)]="input">
+        <button class="btn-dark col-2" (click)="testF()">test</button>
     </div>
     <div class="bg-primary col-8 offset-2">
         <ul style="text-align: center" *ngFor="let name of names">
