@@ -6,7 +6,7 @@
     <div class="bg-primary col-8 offset-2">
         <ul style="text-align: center" *ngFor="let name of names; let i = index">
             <!--<div *ngIf="verify == false">-->
-            <li id="elemento + i">{{ "id " + (i+1) + ": " + name + " " }} <button class="btn-danger" (click)="remove()">Remove</button></li>
+            <li id="elemento + i" *ngIf="test == false">{{ "id " + (i+1) + ": " + name + " " }}<button class="btn-danger" (click)="remove()">Remove</button></li>
             <!--</div>-->
         </ul>
     </div>
