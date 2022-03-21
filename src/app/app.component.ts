@@ -1,3 +1,5 @@
+// assegna un id ad ogni elemento ed al click di ogni bottone elimina la riga in cui esso è contenuto
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -20,6 +22,7 @@ export class AppComponent {
       this.names.splice(i, 1);
       console.log(i)
     }
-      
   }
 }
+
+
