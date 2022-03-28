@@ -4,9 +4,9 @@
         <button class="btn-dark col-2" (click)="testF()">test</button>
     </div>
     <div class="bg-primary col-8 offset-2">
-        <ul style="text-align: center" *ngFor="let name of names; let i = index">
+        <ul style="text-align: center" *ngFor="let item of names;">
             <!--<div *ngIf="verify == false">-->
-            <li>{{ "id " + (i+1) + ": " + name + " " }}<button class="btn-danger" (click)="remove(name)">Remove</button></li>
+            <li>{{ "id " + item.id + ": " + item.name + " " }}<button class="btn-danger" (click)="remove(item)">Remove</button></li>
             <!--</div>-->
         </ul>
     </div>
