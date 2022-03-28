@@ -16,12 +16,8 @@ export class AppComponent {
       this.names[this.counter] = this.input; // inserisci nel in ogni elemento di names il valore dell'input di testo
       this.counter++; // incrementa il counter
   }
-  remove(){
-    // console.log(this.names[this.id]);
-    for(let i = 1; i < this.names.length; i++){
-      this.names.splice(i, 1);
-      console.log(i)
-    }
+  remove(name: string){
+    this.names = this.names.filter(x=>x!=name);
   }
 }
 
