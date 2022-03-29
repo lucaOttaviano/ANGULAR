@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Component1Component } from '../component1/component1.component';
+  import { Users } from '../interfaces/users';
 @Injectable({
   providedIn: 'root'
 })
 export class ExchangeService {
 
-  var: string = ""; // inizializzo l'array da riempire
+  array: Users[] = []; // inizializza la variabile contenitore 
 
-  
+  addUser(input: Users){
+    this.array.push(input); // inserisce l'input nell'array 
+  }
 
   constructor() { }
 }

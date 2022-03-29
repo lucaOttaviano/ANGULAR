@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Users } from '../interfaces/users'; // importazione dell'interfaccia 
 import { ExchangeService } from '../services/exchange.service'; // importazione del servizio
 
 @Component({
@@ -8,7 +9,7 @@ import { ExchangeService } from '../services/exchange.service'; // importazione 
 })
 export class Component2Component implements OnInit {
 
-  
+  array: Users[] = this.exchangeService.array; // richiamo l'array del servizio 
 
   constructor(private exchangeService: ExchangeService) { } // iniezione del servizio
 

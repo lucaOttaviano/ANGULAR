@@ -1,1 +1,8 @@
-<p>component2 works!</p>
+<div>
+    <ul>
+        <!-- "per ogni elemento dell'array binda l'elemento" -->
+        <ul>
+            <li *ngFor="let element of array">{{"FIRST NAME: " + element.firstname + " / LAST NAME: " + element.lastname + " / ID: " + element.id}}</li>
+        </ul>
+    </ul>
+</div>
