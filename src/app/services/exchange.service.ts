@@ -6,9 +6,14 @@ import { Injectable } from '@angular/core';
 export class ExchangeService {
 
   array: Users[] = []; // inizializza la variabile contenitore 
+  selectedUsers?: Users;
 
   addUser(input: Users){
     this.array.push(input); // inserisce l'input nell'array 
+  }
+
+  editUser(input: Users){
+    this.selectedUsers = input;
   }
 
   constructor() { }

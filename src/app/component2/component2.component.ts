@@ -13,6 +13,10 @@ export class Component2Component implements OnInit {
 
   constructor(private exchangeService: ExchangeService) { } // iniezione del servizio
 
+  edit(input: Users){
+    this.exchangeService.editUser(input)
+  }
+
   ngOnInit(): void {
   }
 
